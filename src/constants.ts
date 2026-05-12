@@ -45,6 +45,7 @@ export interface TranslationSet {
     printBill: string;
     emailReceipt: string;
     emailPlaceholder: string;
+    download: string;
   };
   cases: {
     vegetable: { title: string; desc: string; step: string };
@@ -107,7 +108,8 @@ export const TRANSLATIONS: Record<Language, TranslationSet> = {
       price: "Price/kg",
       printBill: "Export PDF Receipt",
       emailReceipt: "Email Receipt",
-      emailPlaceholder: "Enter customer email"
+      emailPlaceholder: "Enter customer email",
+      download: "Download"
     },
     cases: {
       vegetable: { title: "Vegetable Cart", desc: "No more paper diaries. Record every 'SABZI' sale on the go.", step: "Inventory Auto-Update" },
@@ -145,7 +147,8 @@ export const TRANSLATIONS: Record<Language, TranslationSet> = {
       price: "قیمت فی کلو",
       printBill: "ڈیجیٹل رسید حاصل کریں",
       emailReceipt: "ای میل رسید",
-      emailPlaceholder: "کسٹمر کا ای میل لکھیں"
+      emailPlaceholder: "کسٹمر کا ای میل لکھیں",
+      download: "ڈاؤن لوڈ"
     },
     cases: {
       vegetable: { title: "سبزی کا ٹھیلا", desc: "اب کاغذی ڈائری کی ضرورت نہیں۔ ہر سبزی کی فروخت کا فوری اندراج کریں۔", step: "اسٹاک کی خودکار اپ ڈیٹ" },

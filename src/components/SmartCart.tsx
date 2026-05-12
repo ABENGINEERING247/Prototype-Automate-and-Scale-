@@ -293,9 +293,10 @@ export const SmartCart: React.FC<Props> = ({ lang, onClose, products, shopTitle,
                   <button 
                     onClick={exportPDF}
                     disabled={cart.length === 0 || isGeneratingPDF || isSendingEmail}
-                    className="flex-1 h-20 bg-neutral-900 text-white rounded-[28px] font-black flex items-center justify-center gap-3 transition-all hover:bg-black group disabled:opacity-50"
+                    className="flex-1 h-20 bg-neutral-900 text-white rounded-[28px] font-black flex flex-col items-center justify-center gap-1 transition-all hover:bg-black group disabled:opacity-50"
                   >
-                    <Printer size={24} className="group-hover:rotate-12 transition-transform" />
+                    <Printer size={20} className="group-hover:rotate-12 transition-transform" />
+                    <span className="text-[10px] uppercase tracking-tighter">{t.cart.download}</span>
                   </button>
                   <button 
                     onClick={handleFinish}
